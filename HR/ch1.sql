@@ -9,6 +9,7 @@ create table CITY (
 );
 select *
 from CITY;
+
 drop table CITY;
 insert into CITY value (6, "Rotterdam", "NLD", "Zuid-Holland", 593321),
     (3878, "Scottsdale", "USA", "Arizona", 202705),
@@ -34,4 +35,11 @@ where POPULATION > 120000
 -- Third Query    
 select *
 from CITY;
--- Fourth Query    
+-- Fourth Query  
+select * from CITY
+where ID = 4061;
+-- Five Query 
+-- Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA';
+
+
